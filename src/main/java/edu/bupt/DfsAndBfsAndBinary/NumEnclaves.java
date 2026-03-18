@@ -1,4 +1,4 @@
-package edu.bupt.DfsAndBfs;
+package edu.bupt.DfsAndBfsAndBinary;
 
 public class NumEnclaves {
     private int m;

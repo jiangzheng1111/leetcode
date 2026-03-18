@@ -1,4 +1,4 @@
-package edu.bupt.ArraysAndMatrix;
+package edu.bupt.ArraysAndMatrixAndString;
 
 import java.util.ArrayList;
 import java.util.Arrays;

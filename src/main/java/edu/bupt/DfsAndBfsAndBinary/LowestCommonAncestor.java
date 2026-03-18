@@ -1,4 +1,4 @@
-package edu.bupt.DfsAndBfs;
+package edu.bupt.DfsAndBfsAndBinary;
 
 import edu.bupt.Tree.TreeNode;
 

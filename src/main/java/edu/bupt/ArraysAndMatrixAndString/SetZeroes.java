@@ -1,4 +1,4 @@
-package edu.bupt.ArraysAndMatrix;
+package edu.bupt.ArraysAndMatrixAndString;
 
 public class SetZeroes {
 
