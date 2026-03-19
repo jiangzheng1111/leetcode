@@ -15,11 +15,11 @@ public class CombinationSum {
     }
 
     private void dfs(int[] candidates, int leave, int i) {
-        if (leave < 0) {
-            return;
-        }
         if (leave == 0) {
             ans.add(new ArrayList<>(path));
+            return;
+        }
+        if (leave < 0) {
             return;
         }
         for (int j = i; j < candidates.length; j++) {

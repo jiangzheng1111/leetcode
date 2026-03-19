@@ -1,7 +1,7 @@
 package edu.bupt.DfsAndBfsAndBinary;
 
 public class Exist {
-    private final static int[][] DIRS = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    private static final int[][] DIRS = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     private char[][] b;
     private char[] w;
     private int m;

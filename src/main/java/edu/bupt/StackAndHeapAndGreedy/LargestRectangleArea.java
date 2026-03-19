@@ -6,8 +6,8 @@ import java.util.Deque;
 public class LargestRectangleArea {
 
     public int largestRectangleArea(int[] heights) {
-        int ans = 0;
         int n = heights.length;
+        int ans = 0;
         int[] left = new int[n];
         int[] right = new int[n];
         Deque<Integer> stack = new ArrayDeque<>();

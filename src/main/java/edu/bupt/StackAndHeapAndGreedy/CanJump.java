@@ -3,13 +3,12 @@ package edu.bupt.StackAndHeapAndGreedy;
 public class CanJump {
 
     public boolean canJump(int[] nums) {
-        int n = nums.length;
-        int right = 0;
-        for (int i = 0; i < n; i++) {
-            if (right < i) {
+        int pos = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i > pos) {
                 return false;
             }
-            right = Math.max(right, nums[i] + i);
+            pos = Math.max(pos, i + nums[i]);
         }
         return true;
     }

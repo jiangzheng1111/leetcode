@@ -16,7 +16,7 @@ public class PartitionLabels {
         }
         for (int i = 0; i < sc.length; i++) {
             r = Math.max(r, last[sc[i] - 'a']);
-            if (r == i) {
+            if (i == r) {
                 ans.add(r - l + 1);
                 l = r + 1;
             }

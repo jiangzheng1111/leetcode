@@ -6,21 +6,20 @@ import java.util.Set;
 public class LongestConsecutive {
 
     public int longestConsecutive(int[] nums) {
-        Set<Integer> set = new HashSet<>();
         int ans = 0;
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
             set.add(num);
         }
-
-        for (Integer start : set) {
-            if (set.contains(start - 1)) {
+        for (Integer num : set) {
+            if (set.contains(num - 1)) {
                 continue;
             }
-            int end = start + 1;
+            int end = num + 1;
             while (set.contains(end)) {
                 end++;
             }
-            ans = Math.max(ans, end - start);
+            ans = Math.max(ans, end - num);
         }
         return ans;
     }

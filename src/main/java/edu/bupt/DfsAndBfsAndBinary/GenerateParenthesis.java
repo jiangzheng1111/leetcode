@@ -9,8 +9,8 @@ public class GenerateParenthesis {
     private int n;
 
     public List<String> generateParenthesis(int n) {
-        this.path = new char[n * 2];
         this.n = n;
+        this.path = new char[n * 2];
         dfs(0, 0);
         return ans;
     }

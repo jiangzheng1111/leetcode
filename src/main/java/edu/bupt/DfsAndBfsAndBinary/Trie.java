@@ -33,7 +33,7 @@ public class Trie {
         return find(prefix) != 0;
     }
 
-    public int find(String s) {
+    private int find(String s) {
         Node cur = root;
         for (char c : s.toCharArray()) {
             c -= 'a';
